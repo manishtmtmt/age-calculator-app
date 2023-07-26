@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --lightRed: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --offWhite: hsl(0, 0%, 94%);
+  --lightGrey: hsl(0, 0%, 86%);
+  --smokeyGrey: hsl(0, 1%, 44%);
+  --offBlack: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--lightGrey);
+}
+
+#container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  width: 50%;
+  background-color: var(--white);
+  border-radius: 2rem 2rem 10rem 1rem;
+  padding: 5%;
+}
+
+#input-container {
+  width: 70%;
+  display: flex;
+  gap: 15px;
+}
+
+#input-container label {
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+input {
+  display: block;
+  width: 90%;
+  height: 40px;
+  padding: 5%;
+  font-size: 1.2em;
+  border-radius: 5px;
+  border: 0.5px solid;
+  cursor: pointer;
+}
+
+input:focus {
+  border: 1px solid var(--lightGrey);
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#button-container hr {
+  width: 90%;
+}
+
+#button-container button {
+  border-radius: 50%;
+  border: none;
+  background-color: var(--purple);
+  padding: 3%;
+  cursor: pointer;
+}
+
+#button-container button:hover {
+  background-color: black;
+}
+
+#button-container button img {
+  width: 85%;
+}
+
+#output-container {
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 200%;
+}
+
+#output-container span {
+  color: var(--purple);
+}
+
+.red {
+  color: var(--lightRed);
+}
+
+small {
+  font-size: 10px;
+  color: var(--lightRed);
+}
+
+.red-border {
+  border: 1px solid var(--lightRed);
+}
+
+@media screen and (max-width: 420px) {
+  #card {
+    width: 90%;
+    padding: 2%;
+  }
+
+  #input-container {
+    width: 90%;
+  }
+
+  #output-container {
+    font-size: 1em;
+  }
+
+  #button-container {
+    margin: 5% 0;
+  }
+
+  #button-container hr {
+    width: 100%;
+  }
+
+  #button-container button {
+    position: relative;
+    top: 2%;
+    right: 50%;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 821px) {
+  #card {
+    width: 70%;
+    padding: auto;
+  }
+
+  #input-container {
+    width: 80%;
+  }
+
+  #output-container {
+    font-size: 1.5em;
+  }
+
+  #button-container {
+    margin: 5% 0;
+  }
+
+  #button-container hr {
+    width: 100%;
+  }
+
+  #button-container button {
+    position: relative;
+    top: 2%;
+    right: 50%;
+  }
+}
